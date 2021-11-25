@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import myEpicNft from './utils/MyEpicNFT.json';
 
-const TWITTER_HANDLE = 'olivrqin';
+const TWITTER_HANDLE = 'johnoseni1';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
@@ -154,7 +154,7 @@ const App = () => {
         <div className="header-container">
           <p className="header gradient-text">My NFT Collection</p>
           <p className="sub-text">
-            Each unique. Each beautiful. Discover your NFT today.
+           mint me
           </p>
           {currentAccount === "" ? (
             <button onClick={connectWallet} className="cta-button connect-wallet-button">
@@ -168,12 +168,7 @@ const App = () => {
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-          <a
-            className="footer-text"
-            href={TWITTER_LINK}
-            target="_blank"
-            rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+   
         </div>
       </div>
     </div>
